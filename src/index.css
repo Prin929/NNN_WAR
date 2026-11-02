@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-stencil {
+  font-family: 'Black Ops One', 'Chakra Petch', cursive, sans-serif;
+}
+
+.font-military {
+  font-family: 'Chakra Petch', monospace, sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Tactical scanline effect */
+.scanline-bg {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.25)
+  );
+  background-size: 100% 4px;
+}
+
+/* Military Grid background */
+.tactical-grid {
+  background-image: 
+    linear-gradient(to right, rgba(234, 179, 8, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(234, 179, 8, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.camo-gradient {
+  background: radial-gradient(circle at 10% 20%, rgba(38, 55, 33, 0.4) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(55, 45, 25, 0.3) 0%, transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(20, 25, 20, 0.6) 0%, transparent 60%);
+}
+
+/* Glowing text & borders */
+.amber-glow {
+  text-shadow: 0 0 12px rgba(245, 158, 11, 0.6);
+}
+
+.red-alert-glow {
+  text-shadow: 0 0 12px rgba(239, 68, 68, 0.8);
+}
+
+.emerald-glow {
+  text-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}

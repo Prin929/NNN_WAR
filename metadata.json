@@ -1,0 +1,6 @@
+{
+  "name": "NNN Command: Operation Clean Slate",
+  "description": "Enlist as a soldier in Operation No Nut November, track live battalion survival, report tactical casualty debriefs (What, Why, How), and receive prestigious Medals of Honor after November 30.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
